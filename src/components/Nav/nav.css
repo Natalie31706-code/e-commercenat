@@ -1,0 +1,25 @@
+.form-control{
+  width: 600px;
+}
+.nav-link:hover {
+  text-decoration: underline #1881a7 ;
+  text-decoration-thickness: 5px;
+}
+
+.active-link {
+  text-decoration: underline #1881a7 ;
+  text-decoration-thickness: 5px;
+  font-weight: bold;
+  /* color: !important; */
+  text-shadow: 0 0 10px rgb(255, 255, 255);;
+}
+
+@media (max-width: 1200px) {
+  .Sh{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .form-control{
+  width: 100%;
+  }
+}

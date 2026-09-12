@@ -1,0 +1,77 @@
+.containerrr {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+    }
+
+    .login-cardd {
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .login-cardd h2 {
+      margin-bottom: 20px;
+      color: #333;
+      font-size: 28px;
+    }
+
+    .login-cardd input {
+      width: 90%;
+      padding: 14px;
+      margin: 12px 0 0 0;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      font-size: 15px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    .login-cardd .form p{
+      color: red;
+      font-weight: bold;
+      display: none;
+    }
+
+    .login-cardd input:focus {
+      border-color: #1881a7;
+      box-shadow: 0 0 6px rgb(24, 30, 79);
+    }
+    .login-cardd button {
+      width: 100%;
+      padding: 14px;
+      margin-top: 20px;
+      background: linear-gradient(to right, #1881a7, rgb(24, 30, 79));
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .login-cardd button:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+      color: white;
+    }
+
+    .login-cardd p {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .login-cardd a {
+      color: #1881a7;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    .login-cardd a:hover {
+      text-decoration: underline;
+    }

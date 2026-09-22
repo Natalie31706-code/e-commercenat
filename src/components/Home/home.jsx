@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./home.css";
 import axios from "axios";
 import { Link } from "react-router-dom";
@@ -7,9 +7,10 @@ import {Helmet} from "react-helmet";
 import Typewriter from "typewriter-effect";
 
 export default function Home() {
-
+  const productsRef = useRef(null);
   // let {count} = useContext(cart)
   const [api, setApi] = useState([]);
+  
 
   async function getData() {
     let { data } = await axios.get("https://fakestoreapi.com/products");
@@ -46,11 +47,13 @@ export default function Home() {
                 }}
               />
             </p>
-            <button className="p-3 mt-3"><a href="#products" style={{ textDecoration: "none", color: "inherit" }}>Shop Now</a></button>
+            <button className="p-3 mt-3" onClick={() => productsRef.current?.scrollIntoView({behavior: "smooth",})}>
+                Shop Now
+              </button>
           </div>
         </div>
 
-        <div className="container" id="products">
+        <div className="container" ref={productsRef}>
           <div className="space">Check out our newly added products!</div>
         </div>
 
